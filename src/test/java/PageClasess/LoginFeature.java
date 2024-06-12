@@ -22,12 +22,13 @@ public class LoginFeature {
         // Add necessary WebDriver setup code here
     }
     @Test
-    public void login(){
+    public void loginWithCorrectCredentials(){
         Login signin = new Login(driver);
         signin.EnterEmail();
         signin.EnterPassWord();
         signin.EnterTwoTabCode();
         signin.ClickOnVerifyButton();
         signin.verifyUrl("https://arms-fnc-frontend.amalitech-dev.net/dashboard");
+
     }
 }
