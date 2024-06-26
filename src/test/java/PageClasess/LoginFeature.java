@@ -17,10 +17,9 @@ public class LoginFeature {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.get("https://arms-fnc-frontend.amalitech-dev.net/login");
-        // Initialize your WebDriver here, for example:
-        // driver = new ChromeDriver();
-        // Add necessary WebDriver setup code here
-    }
+        System.out.println(  driver.getCurrentUrl());
+        System.out.println(     driver.getTitle());
+         }
     @Test
     public void loginWithCorrectCredentials(){
         Login signin = new Login(driver);
